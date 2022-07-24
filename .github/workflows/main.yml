@@ -24,5 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - name: Install libdus
+        run: sudo apt install libdbus-glib-1-dev
       - name: tauri-build
         uses: JonasKruckenberg/tauri-build@v1.0.3
