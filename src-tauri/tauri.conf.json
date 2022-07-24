@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "yarn dist",
-    "beforeDevCommand": "yarn watch",
+    "beforeBuildCommand": "yarn && yarn dist",
+    "beforeDevCommand": "yarn && yarn watch",
     "devPath": "../dist",
     "distDir": "../dist"
   },
